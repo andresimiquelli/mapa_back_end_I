@@ -54,6 +54,14 @@
             min-height: 60px;
             padding: 40px;
         }
+
+        .container{
+            max-width: 800px;
+            display: flex;
+            margin: auto;
+            padding-top: 30px;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
@@ -69,7 +77,11 @@
         </ul>
     </nav>
     <div class="content">
-        conteúdo
+        <div class="container">
+            <?php
+                include('pages/home.php');
+            ?>
+        </div>
     </div>
     <footer>
         Dados acadêmicos
